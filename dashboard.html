@@ -1868,8 +1868,8 @@
       function initializeSlider(id, reverseDirection, loop) {
 
         const swiper = new Swiper(id, {
-          slidesPerView: 3,
-          spaceBetween: 30,
+          slidesPerView: 1, // Default to 1 slide per view
+          spaceBetween: 10,
           loop: loop,
           autoplay: {
             delay: 3000, // Slide changes every 3 seconds
@@ -1889,21 +1889,15 @@
             onlyInViewport: false,
           },
           breakpoints: {
-              // when window width is >= 480px
-              480: {
-              slidesPerView: 1,
-              spaceBetween: 10
-              },
-              // when window width is >= 768px
-              768: {
+            // For larger screens
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            1024: {
               slidesPerView: 3,
               spaceBetween: 30
-              },
-              // when window width is >= 1024px
-              1024: {
-              slidesPerView: 4,
-              spaceBetween: 40
-              }
+            }
           }
         });
 
