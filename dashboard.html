@@ -1211,6 +1211,7 @@
             type: 'category',
             data: categories.value ?? [],
             axisTick: {
+              alignWithLabel: true,
               lineStyle: {
                 color: 'white' // Color of tick marks on X-axis
               }
@@ -1974,8 +1975,8 @@
       var catLine = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Dec'];
       var dataLine = [150, 230, 224, 218, 135, 147, 260, 120, 350, 450, 97, 200];
 
-      var line1 = initializeLineChart('line1', { "name": "Month(2024)", "value": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Dec"] }, [81, 89, 309, 129, 392, 407, 276, 172, 187, 166, 168, 31]);
-      var line2 = initializeLineChart('line2', { "name": "Month(2024)", "value": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Dec"] }, [1, 4, 0, 3, 14, 19, 15, 12, 6, 6, 6, 1]);
+      var line1 = initializeLineChart('line1', { "name": "Month(2024)", "value": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov","Dec"] }, [81, 89, 309, 129, 392, 407, 276, 172, 187, 166, 168, 31]);
+      var line2 = initializeLineChart('line2', { "name": "Month(2024)", "value": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov","Dec"] }, [1, 4, 0, 3, 14, 19, 15, 12, 6, 6, 6, 1]);
 
       //table
       $('#table_appUser').DataTable();
@@ -1985,7 +1986,7 @@
       $('#table_dueSme').DataTable();
       $('#table_overdueSme').DataTable();
 
-      var bar1 = initializeMultiBarChart('bar1', ["GajiNow", "SME"], { "name": "Month(2024)", "value": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Dec"] }, [{ "name": "GajiNow", "color": "rgb(10 118 167)", "data": [24, 17, 41, 38, 56, 55, 74, 47, 46, 48, 24, 19] }, { "name": "SME", "color": "rgb(0, 175, 255)", "data": [7, 3, 12, 21, 26, 22, 12, 18, 15, 17, 7, 0] }]);
+      var bar1 = initializeMultiBarChart('bar1', ["GajiNow", "SME"], { "name": "Month(2024)", "value": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov","Dec"] }, [{ "name": "GajiNow", "color": "rgb(10 118 167)", "data": [24, 17, 41, 38, 56, 55, 74, 47, 46, 48, 24, 19] }, { "name": "SME", "color": "rgb(0, 175, 255)", "data": [7, 3, 12, 21, 26, 22, 12, 18, 15, 17, 7, 0] }]);
 
 
     });
