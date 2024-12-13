@@ -161,8 +161,8 @@
           <div class="col-12">
             <div class="text-center p-3 faq-header mb-2">
               <h3 class="mb-1 fw-bolder" style="color: white;letter-spacing:18px;font-size: 2.75em;">LIVE DASHBOARD</h3>
-              <h5 id="browser">browser</h5>
-              <h5 id="browserT">browser</h5>
+              <!-- <h5 id="browser">browser</h5>
+              <h5 id="browserT">browser</h5> -->
             </div>
           </div>
         </div>
@@ -1065,22 +1065,22 @@
   <script>
     $(document).ready(function () {
 
-      function isTVBrowser() {
-        const userAgent = navigator.userAgent.toLowerCase();
-        console.log(userAgent, 'useragent');
-        $('#browserT').html(userAgent);
-        return /smart-tv|smarttv|googletv|appletv|hbbtv|webos|tizen|netcast|viera|hisense|roku|sonytv|samsung|lg|philips|sharp/.test(userAgent);
-      }
+      // function isTVBrowser() {
+      //   const userAgent = navigator.userAgent.toLowerCase();
+      //   console.log(userAgent, 'useragent');
+      //   $('#browserT').html(userAgent);
+      //   return /smart-tv|smarttv|googletv|appletv|hbbtv|webos|tizen|netcast|viera|hisense|roku|sonytv|samsung|lg|philips|sharp/.test(userAgent);
+      // }
 
-      if (isTVBrowser()) {
-        console.log("TV browser detected");
-        $('#browser').html('TV browser detected');
-        // Render a simplified version for TVs
-      } else {
-        console.log("Standard browser detected");
-        $('#browser').html('Standard browser detected');
-        // Render the standard version
-      }
+      // if (isTVBrowser()) {
+      //   console.log("TV browser detected");
+      //   $('#browser').html('TV browser detected');
+      //   // Render a simplified version for TVs
+      // } else {
+      //   console.log("Standard browser detected");
+      //   $('#browser').html('Standard browser detected');
+      //   // Render the standard version
+      // }
 
       function initializeGaugeChart(domId, chartTitle, chartValue) {
         var dom = document.getElementById(domId);
